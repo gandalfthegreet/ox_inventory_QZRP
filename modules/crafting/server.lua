@@ -65,12 +65,12 @@ lib.callback.register('ox_inventory:openCraftingBench', function(source, id, ind
 
 	if bench then
 		local groups = bench.groups
-		local coords = getCraftingCoords(source, bench, index)
+		-- local coords = getCraftingCoords(source, bench, index)
 
-		if not coords then return end
+		-- if not coords then return end
 
 		if groups and not server.hasGroup(left, groups) then return end
-		if #(GetEntityCoords(GetPlayerPed(source)) - coords) > 10 then return end
+		-- if #(GetEntityCoords(GetPlayerPed(source)) - coords) > 10 then return end
 
 		if left.open and left.open ~= source then
 			local inv = Inventory(left.open) --[[@as OxInventory]]
@@ -96,10 +96,10 @@ lib.callback.register('ox_inventory:craftItem', function(source, id, index, reci
 
 	if bench then
 		local groups = bench.groups
-		local coords = getCraftingCoords(source, bench, index)
+		-- local coords = getCraftingCoords(source, bench, index)
 
 		if groups and not server.hasGroup(left, groups) then return end
-		if #(GetEntityCoords(GetPlayerPed(source)) - coords) > 10 then return end
+		-- if #(GetEntityCoords(GetPlayerPed(source)) - coords) > 10 then return end
 
 		local recipe = bench.items[recipeId]
 

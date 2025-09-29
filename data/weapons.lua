@@ -1,18 +1,150 @@
 return {
 	Weapons = {
+    ['WEAPON_CHAINSAW'] = {
+	   label = 'Chainsaw',
+	   weight = 5600,
+	   durability = 0.03,
+	   ammoname = 'ammo-9',
+	},
+
+	['WEAPON_CONSAW'] = {
+       label = 'MPX',
+       weight = 1800,
+       durability = 0.03,
+       ammoname = 'ammo-9',
+    },
+
+	['WEAPON_MPX'] = {
+       label = 'MPX',
+       weight = 1800,
+       durability = 0.03,
+       ammoname = 'ammo-9',
+    },
+
+   ['WEAPON_FLAMETHROWER'] = {
+	   label = 'FLAMER',
+	   weight = 5600,
+	   durability = 0.03,
+	   ammoname = 'flamethrower_fuel',
+   },
+		-------------------------------------------------------------------------------------
+   ['WEAPON_KVR'] = {
+	   label = 'KVR',
+	   weight = 1600,
+	   durability = 0.03,
+	   ammoname = 'ammo-9',
+   },
+   ['WEAPON_2011'] = {
+	   label = '2011',
+	   weight = 1600,
+	   durability = 0.03,
+	   ammoname = 'ammo-9',
+   },
+
+
+		-- ['armour'] = {
+		-- 	label = 'Light Armour Vest',
+		-- 	weight = 1500,
+		-- 	stack = false,
+		-- 	rarity = 'uncommon',
+		-- 	divider = 2, -- Higher value lower quality, 100 / 2 (100% durability == 50% armour)
+		-- 	client = {
+		-- 		anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+		-- 		usetime = 2000
+		-- 	}
+		-- },
+
+		-- ['armour_heavy'] = {
+		-- 	label = 'Heavy Armour Vest',
+		-- 	weight = 3000,
+		-- 	stack = false,
+		-- 	rarity = 'rare',
+		-- 	divider = 1, -- Higher value lower quality, 100 / 1 (100% durability == 100% armour)
+		-- 	client = {
+		-- 		anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+		-- 		usetime = 3500,
+		-- 		image = 'armour.png'
+		-- 	}
+		-- },
+
+
+		['weapon_scythe'] = {
+			label = 'scythe',
+			weight = 3000,
+			durability = 0.1,
+		},
+
+
+		['w_ar_val'] = {
+			label = 'Validator',
+			weight = 3600,
+			durability = 0.15,
+			ammoname = 'ammo-x51'
+		},
+
+		['WEAPON_DB_AR15'] = {
+			label = 'DOUBLE BARREL AR-15',
+			weight = 1500,
+			durability = 0.2,
+			ammoname = 'ammo-5.56'
+		},
+
+
+		['WEAPON_GLUE_GUN'] = {
+			label = 'HOT GLUE GUN',
+			weight = 600,
+			durability = 0.001,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_BOW'] = {
+			label = 'BOW',
+			weight = 1800,
+			durability = 0.1,
+			ammoname = 'AMMO_ARROW',
+		},
+
+		['WEAPON_KATANA_2'] = {
+			label = 'KATANA_2',
+			weight = 1300,
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_PL14'] = {
+			label = 'PL14',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_FMR'] = {
+			label = 'FMR',
+			weight = 2200,
+			durability = 0.03,
+			ammoname = 'ammo-5.56',
+		},
+
+		['WEAPON_NVRIFLE'] = {
+			label = 'NVRIFLE',
+			weight = 2800,
+			durability = 0.03,
+			ammoname = 'ammo-5.56',
+		},
+
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,
 			durability = 0.03,
-			ammoname = 'ammo-rifle2',
+			ammoname = 'ammo-x39',
 		},
 
-		['WEAPON_SNOWLAUNCHER'] = {
-			label = 'Snowball Launcher',
-			weight = 1000,
-			durability = 0.03,
-			ammoname = 'WEAPON_SNOWBALL',
-		},
+		-- ['WEAPON_SNOWLAUNCHER'] = {
+		-- 	label = 'Snowball Launcher',
+		-- 	weight = 1000,
+		-- 	durability = 0.03,
+		-- 	ammoname = 'WEAPON_SNOWBALL',
+		-- },
 
 		['WEAPON_TECPISTOL'] = {
 			label = 'Tactical SMG',
@@ -25,7 +157,7 @@ return {
 			label = 'Advanced Rifle',
 			weight = 3100,
 			durability = 0.03,
-			ammoname = 'ammo-rifle',
+			ammoname = 'ammo-5.56',
 		},
 
 		['WEAPON_APPISTOL'] = {
@@ -37,30 +169,30 @@ return {
 
 		['WEAPON_ASSAULTRIFLE'] = {
 			label = 'Assault Rifle',
-			weight = 4500,
+			weight = 3.800,
 			durability = 0.03,
-			ammoname = 'ammo-rifle2',
+			ammoname = 'ammo-x39',
 		},
 
 		['WEAPON_ASSAULTRIFLE_MK2'] = {
 			label = 'Assault Rifle MK2',
 			weight = 2950,
 			durability = 0.03,
-			ammoname = 'ammo-rifle2',
+			ammoname = 'ammo-x39',
 		},
 
 		['WEAPON_ASSAULTSHOTGUN'] = {
 			label = 'Assault Shotgun',
 			weight = 5200,
 			durability = 0.05,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_ASSAULTSMG'] = {
 			label = 'Assault SMG',
 			weight = 2900,
 			durability = 0.05,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_BALL'] = {
@@ -91,21 +223,21 @@ return {
 			label = 'Bullpup Rifle',
 			weight = 2900,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_BULLPUPRIFLE_MK2'] = {
 			label = 'Bullpup Rifle MK2',
 			weight = 2900,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_BULLPUPSHOTGUN'] = {
 			label = 'Bullpup Shotgun',
 			weight = 3100,
 			durability = 0.2,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_BZGAS'] = {
@@ -118,14 +250,14 @@ return {
 			label = 'Carbine Rifle',
 			weight = 3100,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_CARBINERIFLE_MK2'] = {
 			label = 'Carbine Rifle MK2',
 			weight = 3000,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_CERAMICPISTOL'] = {
@@ -146,14 +278,14 @@ return {
 			label = 'Combat MG',
 			weight = 7500,
 			durability = 0.02,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_COMBATMG_MK2'] = {
 			label = 'Combat MG MK2',
 			weight = 8000,
 			durability = 0.02,
-			ammoname = 'ammo-rifle2'
+			ammoname = 'ammo-x39'
 		},
 
 		['WEAPON_COMBATPDW'] = {
@@ -174,21 +306,21 @@ return {
 			label = 'Combat Shotgun',
 			weight = 4400,
 			durability = 0.2,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
-		['WEAPON_COMPACTLAUNCHER'] = {
-			label = 'Compact Grenade Launcher',
-			weight = 2500,
-			durability = 0.05,
-			ammoname = 'ammo-grenade'
-		},
+		-- ['WEAPON_COMPACTLAUNCHER'] = {
+		-- 	label = 'Compact Grenade Launcher',
+		-- 	weight = 2500,
+		-- 	durability = 0.05,
+		-- 	ammoname = 'ammo-grenade'
+		-- },
 
 		['WEAPON_COMPACTRIFLE'] = {
 			label = 'Compact Rifle',
 			weight = 3600,
 			durability = 0.05,
-			ammoname = 'ammo-rifle2'
+			ammoname = 'ammo-x39'
 		},
 
 		['WEAPON_CROWBAR'] = {
@@ -207,7 +339,7 @@ return {
 			label = 'Double Barrel Shotgun',
 			weight = 3175,
 			durability = 0.4,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_DOUBLEACTION'] = {
@@ -217,12 +349,12 @@ return {
 			ammoname = 'ammo-38'
 		},
 
-		['WEAPON_EMPLAUNCHER'] = {
-			label = 'Compact EMP Launcher',
-			weight = 2750,
-			durability = 0.2,
-			ammoname = 'ammo-emp'
-		},
+		-- ['WEAPON_EMPLAUNCHER'] = {
+		-- 	label = 'Compact EMP Launcher',
+		-- 	weight = 2750,
+		-- 	durability = 0.2,
+		-- 	ammoname = 'ammo-emp'
+		-- },
 
 		['WEAPON_FIREEXTINGUISHER'] = {
 			label = 'Fire Extinguisher',
@@ -262,22 +394,22 @@ return {
 			durability = 0.1,
 		},
 
-		['WEAPON_GRENADE'] = {
-			label = 'Grenade',
-			weight = 400,
-			throwable = true,
-		},
+		-- ['WEAPON_GRENADE'] = {
+		-- 	label = 'Grenade',
+		-- 	weight = 400,
+		-- 	throwable = true,
+		-- },
 
-		['WEAPON_GRENADELAUNCHER'] = {
-			label = 'Grenade Launcher',
-			weight = 6500,
-			durability = 0.05,
-			ammoname = 'ammo-grenade'
-		},
+		-- ['WEAPON_GRENADELAUNCHER'] = {
+		-- 	label = 'Grenade Launcher',
+		-- 	weight = 6500,
+		-- 	durability = 0.05,
+		-- 	ammoname = 'ammo-grenade'
+		-- },
 
 		['WEAPON_GUSENBERG'] = {
 			label = 'Gusenberg',
-			weight = 4900,
+			weight = 4500,
 			durability = 0.04,
 			ammoname = 'ammo-45'
 		},
@@ -298,7 +430,7 @@ return {
 			label = 'Heavy Rifle',
 			weight = 3300,
 			durability = 0.2,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_HAZARDCAN'] = {
@@ -311,17 +443,17 @@ return {
 			weight = 1200,
 		},
 
-		['WEAPON_HOMINGLAUNCHER'] = {
-			label = 'Homing Launcher',
-			weight = 10000,
-			durability = 0.6,
-			ammoname = 'ammo-rocket'
-		},
+		-- ['WEAPON_HOMINGLAUNCHER'] = {
+		-- 	label = 'Homing Launcher',
+		-- 	weight = 10000,
+		-- 	durability = 0.6,
+		-- 	ammoname = 'ammo-rocket'
+		-- },
 
-		['WEAPON_FERTILIZERCAN'] = {
-			label = 'Fertilizer Can',
-			weight = 12000,
-		},
+		-- ['WEAPON_FERTILIZERCAN'] = {
+		-- 	label = 'Fertilizer Can',
+		-- 	weight = 12000,
+		-- },
 
 		['WEAPON_HEAVYPISTOL'] = {
 			label = 'Heavy Pistol',
@@ -334,21 +466,21 @@ return {
 			label = 'Heavy Shotgun',
 			weight = 3600,
 			durability = 0.1,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_HEAVYSNIPER'] = {
 			label = 'Heavy Sniper',
-			weight = 12700,
+			weight = 14800,
 			durability = 0.5,
-			ammoname = 'ammo-heavysniper'
+			ammoname = 'ammo-50bmg'
 		},
 
 		['WEAPON_HEAVYSNIPER_MK2'] = {
 			label = 'Heavy Sniper MK2',
-			weight = 14000,
+			weight = 12900,
 			durability = 0.5,
-			ammoname = 'ammo-heavysniper'
+			ammoname = 'ammo-50bmg'
 		},
 
 		['WEAPON_KNIFE'] = {
@@ -385,31 +517,31 @@ return {
 
 		['WEAPON_MARKSMANRIFLE'] = {
 			label = 'Marksman Rifle',
-			weight = 7500,
+			weight = 4500,
 			durability = 0.4,
-			ammoname = 'ammo-sniper'
+			ammoname = 'ammo-x51'
 		},
 
 		['WEAPON_MARKSMANRIFLE_MK2'] = {
 			label = 'Marksman Rifle MK2',
-			weight = 4000,
+			weight = 3400,
 			durability = 0.4,
-			ammoname = 'ammo-sniper'
+			ammoname = 'ammo-x51'
 		},
 
 		['WEAPON_MG'] = {
 			label = 'Machine Gun',
-			weight = 9000,
+			weight = 10000,
 			durability = 0.02,
-			ammoname = 'ammo-rifle2'
+			ammoname = 'ammo-x39'
 		},
 
-		['WEAPON_MINIGUN'] = {
-			label = 'Minigun',
-			weight = 38500,
-			durability = 0.1,
-			ammoname = 'ammo-rifle2'
-		},
+		-- ['WEAPON_MINIGUN'] = {
+		-- 	label = 'Minigun',
+		-- 	weight = 19000,
+		-- 	durability = 0.1,
+		-- 	ammoname = 'ammo-x39'
+		-- },
 
 		['WEAPON_MICROSMG'] = {
 			label = 'Micro SMG',
@@ -422,7 +554,7 @@ return {
 			label = 'Military Rifle',
 			weight = 3600,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_MINISMG'] = {
@@ -461,6 +593,7 @@ return {
 		['WEAPON_PETROLCAN'] = {
 			label = 'Jerry Can',
 			weight = 4000,
+			stack = true,
 		},
 
 		['WEAPON_GADGETPISTOL'] = {
@@ -470,11 +603,11 @@ return {
 			ammoname = 'ammo-9'
 		},
 
-		['WEAPON_PIPEBOMB'] = {
-			label = 'Pipe Bomb',
-			weight = 1800,
-			throwable = true,
-		},
+		-- ['WEAPON_PIPEBOMB'] = {
+		-- 	label = 'Pipe Bomb',
+		-- 	weight = 1800,
+		-- 	throwable = true,
+		-- },
 
 		['WEAPON_PISTOL'] = {
 			label = 'Pistol',
@@ -509,39 +642,39 @@ return {
 			durability = 0.1,
 		},
 
-		['WEAPON_PROXMINE'] = {
-			label = 'Proximity Mine',
-			weight = 2500,
-			throwable = true,
-		},
+		-- ['WEAPON_PROXMINE'] = {
+		-- 	label = 'Proximity Mine',
+		-- 	weight = 2500,
+		-- 	throwable = true,
+		-- },
 
 		['WEAPON_PUMPSHOTGUN'] = {
 			label = 'Pump Shotgun',
 			weight = 3400,
 			durability = 0.1,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_PUMPSHOTGUN_MK2'] = {
 			label = 'Pump Shotgun MK2',
 			weight = 3200,
 			durability = 0.1,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
-		['WEAPON_RAILGUN'] = {
-			label = 'Railgun',
-			weight = 3570,
-			durability = 0.5,
-			ammoname = 'ammo-railgun'
-		},
+		-- ['WEAPON_RAILGUN'] = {
+		-- 	label = 'Railgun',
+		-- 	weight = 3570,
+		-- 	durability = 0.5,
+		-- 	ammoname = 'ammo-railgun'
+		-- },
 
-		['WEAPON_RAILGUNXM3'] = {
-			label = 'Railgun XM3',
-			weight = 3570,
-			durability = 0.5,
-			ammoname = 'ammo-railgun'
-		},
+		-- ['WEAPON_RAILGUNXM3'] = {
+		-- 	label = 'Railgun XM3',
+		-- 	weight = 3570,
+		-- 	durability = 0.5,
+		-- 	ammoname = 'ammo-railgun'
+		-- },
 
 		['WEAPON_RAYCARBINE'] = {
 			label = 'Unholy Hellbringer',
@@ -550,11 +683,11 @@ return {
 			ammoname = 'ammo-laser'
 		},
 
-		['WEAPON_RAYPISTOL'] = {
-			label = 'Up-n-Atomizer',
-			weight = 1540,
-			durability = 0.5
-		},
+		-- ['WEAPON_RAYPISTOL'] = {
+		-- 	label = 'Up-n-Atomizer',
+		-- 	weight = 1540,
+		-- 	durability = 0.5
+		-- },
 
 		['WEAPON_REVOLVER'] = {
 			label = 'Revolver',
@@ -570,18 +703,18 @@ return {
 			ammoname = 'ammo-44'
 		},
 
-		['WEAPON_RPG'] = {
-			label = 'RPG',
-			weight = 5000,
-			durability = 0.3,
-			ammoname = 'ammo-rocket'
-		},
+		-- ['WEAPON_RPG'] = {
+		-- 	label = 'RPG',
+		-- 	weight = 5000,
+		-- 	durability = 0.3,
+		-- 	ammoname = 'ammo-rocket'
+		-- },
 
 		['WEAPON_SAWNOFFSHOTGUN'] = {
 			label = 'Sawn Off Shotgun',
 			weight = 2380,
 			durability = 0.1,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_SMG'] = {
@@ -598,17 +731,17 @@ return {
 			ammoname = 'ammo-9'
 		},
 
-		['WEAPON_SMOKEGRENADE'] = {
-			label = 'Smoke Grenade',
-			weight = 600,
-			throwable = true,
-		},
+		-- ['WEAPON_SMOKEGRENADE'] = {
+		-- 	label = 'Smoke Grenade',
+		-- 	weight = 600,
+		-- 	throwable = true,
+		-- },
 
 		['WEAPON_SNIPERRIFLE'] = {
 			label = 'Sniper Rifle',
 			weight = 5000,
 			durability = 0.5,
-			ammoname = 'ammo-sniper'
+			ammoname = 'ammo-x51'
 		},
 
 		['WEAPON_SNOWBALL'] = {
@@ -635,21 +768,21 @@ return {
 			label = 'Special Carbine',
 			weight = 3000,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
 		['WEAPON_SPECIALCARBINE_MK2'] = {
 			label = 'Special Carbine MK2',
 			weight = 3370,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
-		['WEAPON_STICKYBOMB'] = {
-			label = 'Sticky Bomb',
-			weight = 1000,
-			throwable = true,
-		},
+		-- ['WEAPON_STICKYBOMB'] = {
+		-- 	label = 'Sticky Bomb',
+		-- 	weight = 1000,
+		-- 	throwable = true,
+		-- },
 
 		['WEAPON_STONE_HATCHET'] = {
 			label = 'Stone Hatchet',
@@ -665,9 +798,9 @@ return {
 
 		['WEAPON_AUTOSHOTGUN'] = {
 			label = 'Sweeper Shotgun',
-			weight = 4400,
+			weight = 3000,
 			durability = 0.05,
-			ammoname = 'ammo-shotgun'
+			ammoname = 'ammo-12g'
 		},
 
 		['WEAPON_SWITCHBLADE'] = {
@@ -684,12 +817,12 @@ return {
 			ammoname = 'ammo-9'
 		},
 
-		['WEAPON_RAYMINIGUN'] = {
-			label = 'Widowmaker',
-			weight = 7000,
-			durability = 0.1,
-			ammoname = 'ammo-laser'
-		},
+		-- ['WEAPON_RAYMINIGUN'] = {
+		-- 	label = 'Widowmaker',
+		-- 	weight = 7000,
+		-- 	durability = 0.1,
+		-- 	ammoname = 'ammo-laser'
+		-- },
 
 		['WEAPON_WRENCH'] = {
 			label = 'Wrench',
@@ -701,30 +834,729 @@ return {
 			label = 'Precision Rifle',
 			weight = 4800,
 			durability = 0.4,
-			ammoname = 'ammo-sniper'
+			ammoname = 'ammo-x51'
 		},
 
 		['WEAPON_TACTICALRIFLE'] = {
 			label = 'Tactical Rifle',
 			weight = 3400,
 			durability = 0.03,
-			ammoname = 'ammo-rifle'
+			ammoname = 'ammo-5.56'
 		},
 
-		['WEAPON_TEARGAS'] = {
-			label = 'Tear Gas',
-			weight = 600,
-			throwable = true,
-		},
+		-- ['WEAPON_TEARGAS'] = {
+		-- 	label = 'Tear Gas',
+		-- 	weight = 600,
+		-- 	throwable = true,
+		-- },
 	},
 
 	Components = {
+		-------------------------------------------------------------------------------------
+		------------------------------ marko -------------------------------------------
+		-------------------------------------------------------------------------------------
+
+-- Magazines
+['mpx_mag_1'] = { label = 'MPX 20rnd Magazine', weight = 150, type = 'magazine', client = { component = {'COMPONENT_MPX_CLIP_01'}, usetime = 2500 } },
+['mpx_mag_2'] = { label = 'MPX 41rnd Magazine', weight = 200, type = 'magazine', client = { component = {'COMPONENT_MPX_CLIP_02'}, usetime = 2500 } },
+['mpx_mag_3'] = { label = 'MPX 50rnd Stick Magazine', weight = 250, type = 'magazine', client = { component = {'COMPONENT_MPX_CLIP_03'}, usetime = 2500 } },
+
+-- Barrels
+['mpx_barrel_1']  = { label = 'MPX 114mm Barrel',     weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_01'}, usetime = 2500 } },
+['mpx_barrel_2']  = { label = 'MPX 114mm ISBarrel',   weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_02'}, usetime = 2500 } },
+['mpx_barrel_3']  = { label = 'MPX 114mm SBarrel',    weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_03'}, usetime = 2500 } },
+['mpx_barrel_4']  = { label = 'MPX 165mm Barrel',     weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_04'}, usetime = 2500 } },
+['mpx_barrel_5']  = { label = 'MPX 165mm ISBarrel',   weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_05'}, usetime = 2500 } },
+['mpx_barrel_6']  = { label = 'MPX 165mm SBarrel',    weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_06'}, usetime = 2500 } },
+['mpx_barrel_7']  = { label = 'MPX 205mm Barrel',     weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_07'}, usetime = 2500 } },
+['mpx_barrel_8']  = { label = 'MPX 205mm SBarrel',    weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_08'}, usetime = 2500 } },
+['mpx_barrel_9']  = { label = 'MPX 265mm Barrel',     weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_09'}, usetime = 2500 } },
+['mpx_barrel_10'] = { label = 'MPX 265mm SBarrel',    weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_10'}, usetime = 2500 } },
+['mpx_barrel_11'] = { label = 'MPX 355mm Barrel',     weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_11'}, usetime = 2500 } },
+['mpx_barrel_12'] = { label = 'MPX 355mm SBarrel',    weight = 200, type = 'barrel', client = { component = {'COMPONENT_MPX_BARREL_12'}, usetime = 2500 } },
+
+-- Handguards
+['mpx_handguard_1'] = { label = 'MPX Handguard #1', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_01'}, usetime = 2500 } },
+['mpx_handguard_2'] = { label = 'MPX Handguard #2', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_02'}, usetime = 2500 } },
+['mpx_handguard_3'] = { label = 'MPX Handguard #3', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_03'}, usetime = 2500 } },
+['mpx_handguard_4'] = { label = 'MPX Handguard #4', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_04'}, usetime = 2500 } },
+['mpx_handguard_5'] = { label = 'MPX Handguard #5', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_05'}, usetime = 2500 } },
+['mpx_handguard_6'] = { label = 'MPX Handguard #6', weight = 200, type = 'handguard', client = { component = {'COMPONENT_MPX_HANDGUARD_06'}, usetime = 2500 } },
+
+-- Stocks
+['mpx_stock_1']  = { label = 'MPX Stock #1',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_01'}, usetime = 2500 } },
+['mpx_stock_2']  = { label = 'MPX Stock #2',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_02'}, usetime = 2500 } },
+['mpx_stock_3']  = { label = 'MPX Stock #3',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_03'}, usetime = 2500 } },
+['mpx_stock_4']  = { label = 'MPX Stock #4',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_04'}, usetime = 2500 } },
+['mpx_stock_5']  = { label = 'MPX Stock #5',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_05'}, usetime = 2500 } },
+['mpx_stock_6']  = { label = 'MPX Stock #6',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_06'}, usetime = 2500 } },
+['mpx_stock_7']  = { label = 'MPX Stock #7',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_07'}, usetime = 2500 } },
+['mpx_stock_8']  = { label = 'MPX Stock #8',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_08'}, usetime = 2500 } },
+['mpx_stock_9']  = { label = 'MPX Stock #9',  weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_09'}, usetime = 2500 } },
+['mpx_stock_10'] = { label = 'MPX Stock #10', weight = 200, type = 'stock', client = { component = {'COMPONENT_MPX_STOCK_10'}, usetime = 2500 } },
+
+-- Flashlights
+['mpx_flash_1'] = { label = 'MPX Flashlight #1', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_01'}, usetime = 2500 } },
+['mpx_flash_2'] = { label = 'MPX Flashlight #2', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_02'}, usetime = 2500 } },
+['mpx_flash_3'] = { label = 'MPX Flashlight #3', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_03'}, usetime = 2500 } },
+['mpx_flash_4'] = { label = 'MPX Flashlight #4', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_04'}, usetime = 2500 } },
+['mpx_flash_5'] = { label = 'MPX Flashlight #5', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_05'}, usetime = 2500 } },
+['mpx_flash_6'] = { label = 'MPX Flashlight #6', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_06'}, usetime = 2500 } },
+['mpx_flash_7'] = { label = 'MPX Flashlight #7', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_07'}, usetime = 2500 } },
+['mpx_flash_8'] = { label = 'MPX Flashlight #8', weight = 100, type = 'flashlight', client = { component = {'COMPONENT_MPX_FLSH_08'}, usetime = 2500 } },
+
+-- Scopes
+['mpx_scope_1'] = { label = 'MPX Ironsights', weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_01'}, usetime = 2500 } },
+['mpx_scope_2'] = { label = 'MPX Scope #1',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_02'}, usetime = 2500 } },
+['mpx_scope_3'] = { label = 'MPX Scope #2',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_03'}, usetime = 2500 } },
+['mpx_scope_4'] = { label = 'MPX Scope #3',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_04'}, usetime = 2500 } },
+['mpx_scope_5'] = { label = 'MPX Scope #4',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_05'}, usetime = 2500 } },
+['mpx_scope_6'] = { label = 'MPX Scope #5',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_06'}, usetime = 2500 } },
+['mpx_scope_7'] = { label = 'MPX Scope #6',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_07'}, usetime = 2500 } },
+['mpx_scope_8'] = { label = 'MPX Scope #7',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_08'}, usetime = 2500 } },
+['mpx_scope_9'] = { label = 'MPX Scope #8',   weight = 150, type = 'scope', client = { component = {'COMPONENT_MPX_SCOPE_09'}, usetime = 2500 } },
+
+['kvr_barrel_1'] = {
+	label = 'Kvr Barrel #1',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_BARREL_1'},
+		usetime = 2500
+	},
+},
+['kvr_barrel_2'] = {
+	label = 'Kvr Barrel #2',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_BARREL_2'},
+		usetime = 2500
+	},
+},
+['kvr_barrel_3'] = {
+	label = 'Kvr Barrel #3',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_BARREL_3'},
+		usetime = 2500
+	},
+},
+['kvr_supp_1'] = {
+	label = 'Kvr Supp #1',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_1'},
+		usetime = 2500
+	},
+},
+['kvr_supp_2'] = {
+	label = 'Kvr Supp #2',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_2'},
+		usetime = 2500
+	},
+},
+['kvr_supp_3'] = {
+	label = 'Kvr Supp #3',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_3'},
+		usetime = 2500
+	},
+},
+['kvr_supp_4'] = {
+	label = 'Kvr Supp #4',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_4'},
+		usetime = 2500
+	},
+},
+['kvr_supp_5'] = {
+	label = 'Kvr Supp #5',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_5'},
+		usetime = 2500
+	},
+},
+['kvr_supp_6'] = {
+	label = 'Kvr Supp #6',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_6'},
+		usetime = 2500
+	},
+},
+['kvr_supp_7'] = {
+	label = 'Kvr Supp #7',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_7'},
+		usetime = 2500
+	},
+},
+['kvr_supp_8'] = {
+	label = 'Kvr Supp #8',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_8'},
+		usetime = 2500
+	},
+},
+['kvr_supp_9'] = {
+	label = 'Kvr Supp #9',
+	weight = 200,
+	type = 'muzzle',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_SUPP_9'},
+		usetime = 2500
+	},
+},
+['kvr_handguard_1'] = {
+	label = 'Kvr Handguard #1',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_HANDGUARD_1'},
+		usetime = 2500
+	},
+},
+['kvr_handguard_2'] = {
+	label = 'Kvr Handguard #2',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_HANDGUARD_2'},
+		usetime = 2500
+	},
+},
+['kvr_handguard_3'] = {
+	label = 'Kvr Handguard #3',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_HANDGUARD_3'},
+		usetime = 2500
+	},
+},
+['kvr_stock_1'] = {
+	label = 'Kvr Stock #1',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_1'},
+		usetime = 2500
+	},
+},
+['kvr_stock_2'] = {
+	label = 'Kvr Stock #2',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_2'},
+		usetime = 2500
+	},
+},
+['kvr_stock_3'] = {
+	label = 'Kvr Stock #3',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_3'},
+		usetime = 2500
+	},
+},
+['kvr_stock_4'] = {
+	label = 'Kvr Stock #4',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_4'},
+		usetime = 2500
+	},
+},
+['kvr_stock_5'] = {
+	label = 'Kvr Stock #5',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_5'},
+		usetime = 2500
+	},
+},
+['kvr_stock_6'] = {
+	label = 'Kvr Stock #6',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_6'},
+		usetime = 2500
+	},
+},
+['kvr_stock_7'] = {
+	label = 'Kvr Stock #7',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_7'},
+		usetime = 2500
+	},
+},
+['kvr_stock_8'] = {
+	label = 'Kvr Stock #8',
+	weight = 200,
+	type = 'stock',
+	client = {
+		component = {'COMPONENT_MARKOMODSKVR_STOCK_8'},
+		usetime = 2500
+	},
+},
+['2011_clip_01'] = {
+	label = '2011 Clip #01',
+	weight = 200,
+	type = 'magazine',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_CLIP_01'},
+		usetime = 2500
+	},
+},
+['2011_clip_02'] = {
+	label = '2011 Clip #02',
+	weight = 200,
+	type = 'magazine',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_CLIP_02'},
+		usetime = 2500
+	},
+},
+['2011_barrel_01'] = {
+	label = '2011 Barrel #01',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_BARREL_01'},
+		usetime = 2500
+	},
+},
+['2011_barrel_02'] = {
+	label = '2011 Barrel #02',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_BARREL_02'},
+		usetime = 2500
+	},
+},
+['2011_barrel_03'] = {
+	label = '2011 Barrel #03',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_BARREL_03'},
+		usetime = 2500
+	},
+},
+['2011_slide_01'] = {
+	label = '2011 Slide #01',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_01'},
+		usetime = 2500
+	},
+},
+['2011_slide_02'] = {
+	label = '2011 Slide #02',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_02'},
+		usetime = 2500
+	},
+},
+['2011_slide_03'] = {
+	label = '2011 Slide #03',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_03'},
+		usetime = 2500
+	},
+},
+['2011_slide_04'] = {
+	label = '2011 Slide #04',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_04'},
+		usetime = 2500
+	},
+},
+['2011_slide_05'] = {
+	label = '2011 Slide #05',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_05'},
+		usetime = 2500
+	},
+},
+['2011_slide_06'] = {
+	label = '2011 Slide #06',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_06'},
+		usetime = 2500
+	},
+},
+['2011_slide_07'] = {
+	label = '2011 Slide #07',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_07'},
+		usetime = 2500
+	},
+},
+['2011_slide_08'] = {
+	label = '2011 Slide #08',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_SLIDE_08'},
+		usetime = 2500
+	},
+},
+['2011_muzzle_01'] = {
+	label = '2011 Muzzle #01',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_MUZZLE_01'},
+		usetime = 2500
+	},
+},
+['2011_muzzle_02'] = {
+	label = '2011 Muzzle #02',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_MUZZLE_02'},
+		usetime = 2500
+	},
+},
+['2011_muzzle_03'] = {
+	label = '2011 Muzzle #03',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_MUZZLE_03'},
+		usetime = 2500
+	},
+},
+['2011_flsh_01'] = {
+	label = '2011 Flsh #01',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_FLSH_01'},
+		usetime = 2500
+	},
+},
+['2011_flsh_02'] = {
+	label = '2011 Flsh #02',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_FLSH_02'},
+		usetime = 2500
+	},
+},
+['2011_flsh_03'] = {
+	label = '2011 Flsh #03',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_FLSH_03'},
+		usetime = 2500
+	},
+},
+['2011_flsh_04'] = {
+	label = '2011 Flsh #04',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_FLSH_04'},
+		usetime = 2500
+	},
+},
+['2011_flsh_05'] = {
+	label = '2011 Flsh #05',
+	weight = 200,
+	type = 'clip',
+	client = {
+		component = {'COMPONENT_MARKOMODS2011_FLSH_05'},
+		usetime = 2500
+	},
+},
+['shared_grip_01'] = {
+	label = 'Shared Grip #01 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_01'},
+		usetime = 2500
+	},
+},
+['shared_grip_03'] = {
+	label = 'Shared Grip #03 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_03'},
+		usetime = 2500
+	},
+},
+['shared_grip_07'] = {
+	label = 'Shared Grip #07 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_07'},
+		usetime = 2500
+	},
+},
+['shared_grip_08'] = {
+	label = 'Shared Grip #08 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_08'},
+		usetime = 2500
+	},
+},
+['shared_grip_09'] = {
+	label = 'Shared Grip #09 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_09'},
+		usetime = 2500
+	},
+},
+['shared_grip_16'] = {
+	label = 'Shared Grip #16 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_16'},
+		usetime = 2500
+	},
+},
+['shared_grip_17'] = {
+	label = 'Shared Grip #17 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_17'},
+		usetime = 2500
+	},
+},
+['shared_grip_19'] = {
+	label = 'Shared Grip #19 (Fits KVR)',
+	weight = 200,
+	type = 'grip',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_GRIP_19'},
+		usetime = 2500
+	},
+},
+['shared_scope_01'] = {
+	label = 'Shared Scope #01 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_01'},
+		usetime = 2500
+	},
+},
+['shared_scope_02'] = {
+	label = 'Shared Scope #02 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_02'},
+		usetime = 2500
+	},
+},
+['shared_scope_03'] = {
+	label = 'Shared Scope #03 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_03'},
+		usetime = 2500
+	},
+},
+['shared_scope_04'] = {
+	label = 'Shared Scope #04 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_04'},
+		usetime = 2500
+	},
+},
+['shared_scope_05'] = {
+	label = 'Shared Scope #05 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_05'},
+		usetime = 2500
+	},
+},
+['shared_scope_06'] = {
+	label = 'Shared Scope #06 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_06'},
+		usetime = 2500
+	},
+},
+['shared_scope_07'] = {
+	label = 'Shared Scope #07 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_07'},
+		usetime = 2500
+	},
+},
+['shared_scope_08'] = {
+	label = 'Shared Scope #08 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_08'},
+		usetime = 2500
+	},
+},
+['shared_zoomscope_01'] = {
+	label = 'Shared Zoomscope #01 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_01'},
+		usetime = 2500
+	},
+},
+['shared_zoomscope_02'] = {
+	label = 'Shared Zoomscope #02 (Fits KVR)',
+	weight = 200,
+	type = 'scope',
+	client = {
+		component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_02'},
+		usetime = 2500
+	},
+},
+		--------------------------------------------------------------------------------
+		------------------------------ db_ar15 -----------------------------------------
+
+		['db_ar15_suppressor'] = {
+			label = 'Double Barrel AR-15 Suppressor',
+			type = 'Suppressor',
+			weight = 280,
+			client = {
+                image = 'DB_AR15_SUPP.png',
+				component = {
+					`COMPONENT_DB_AR15_SUPP`,
+				},
+				usetime = 2500
+			}
+		},
+
+		-------------------------------------------------------------------------------------
+		------------------------------ nvrifle --------------------------------------------------
+
+		['w_ar_nvrifle_mag1'] = {
+			label = 'nvrifle mag1',
+			weight = 200,
+			type = 'nvrifle mag',
+			client = {
+				component = {'w_ar_nvrifle_mag1'},
+				usetime = 2500
+			}
+		},
+		['w_ar_nvrifle_mag2'] = {
+			label = 'nvrifle mag2',
+			weight = 200,
+			type = 'nvrifle mag',
+			client = {
+				component = {'w_ar_nvrifle_mag2'},
+				usetime = 2500
+			}
+		},
+		['w_at_nvrifle_afgrip'] = {
+			label = 'nvrifle afgrip',
+			weight = 200,
+			type = 'nvrifle grip',
+			client = {
+				component = {'w_at_nvrifle_afgrip'},
+				usetime = 2500
+			}
+		},
+		['w_at_nvrifle_scope_sight'] = {
+			label = 'nvrifle scope',
+			weight = 200,
+			type = 'nvrifle scope',
+			client = {
+				component = {'w_at_nvrifle_scope_sight'},
+				usetime = 2500
+			}
+		},
+		['w_at_nvrifle_scope_small'] = {
+			label = 'nvrifle scope sml',
+			weight = 200,
+			type = 'nvrifle scope',
+			client = {
+				component = {'w_at_nvrifle_scope_small'},
+				usetime = 2500
+			}
+		},
+		['w_at_nvrifle_supp'] = {
+			label = 'nvrifle suppressor',
+			weight = 200,
+			type = 'nvrifle scope',
+			client = {
+				component = {'w_at_nvrifle_supp'},
+				usetime = 2500
+			}
+		},
+
+	 -------------------------------------------------------------------------------------
+
 		['at_flashlight'] = {
 			label = 'Tactical Flashlight',
 			weight = 120,
 			type = 'flashlight',
 			client = {
 				component = {
+					`w_at_pi_pl14_flsh`,
 					`COMPONENT_AT_AR_FLSH`,
 					`COMPONENT_AT_AR_FLSH_REH`,
 					`COMPONENT_AT_PI_FLSH`,
@@ -742,6 +1574,7 @@ return {
 			client = {
                 image = 'at_suppressor.png',
 				component = {
+					`w_at_pi_pl14_supp`,
 					`COMPONENT_AT_PI_SUPP`,
 					`COMPONENT_AT_PI_SUPP_02`,
 					`COMPONENT_CERAMICPISTOL_SUPP`,
@@ -992,6 +1825,7 @@ return {
 			weight = 280,
 			client = {
 				component = {
+					`w_me_katana_2_saya`,
 					`COMPONENT_AT_SCOPE_SMALL`,
 					`COMPONENT_AT_SCOPE_SMALL_02`,
 					`COMPONENT_AT_SCOPE_SMALL_MK2`,
@@ -1827,7 +2661,7 @@ return {
 			weight = 400,
 		},
 
-		['ammo-heavysniper'] = {
+		['ammo-50bmg'] = {
 			label = '.50 BMG',
 			weight = 51,
 		},
@@ -1847,12 +2681,12 @@ return {
 			weight = 150,
 		},
 
-		['ammo-rifle'] = {
+		['ammo-5.56'] = {
 			label = '5.56x45',
 			weight = 4,
 		},
 
-		['ammo-rifle2'] = {
+		['ammo-x39'] = {
 			label = '7.62x39',
 			weight = 8,
 		},
@@ -1862,12 +2696,12 @@ return {
 			weight = 500,
 		},
 
-		['ammo-shotgun'] = {
+		['ammo-12g'] = {
 			label = '12 Gauge',
 			weight = 38,
 		},
 
-		['ammo-sniper'] = {
+		['ammo-x51'] = {
 			label = '7.62x51',
 			weight = 9,
 		},
@@ -1876,5 +2710,20 @@ return {
 			label = 'EMP round',
 			weight = 400,
 		},
+
+		['ammo-minigun'] = {
+			label = 'Minigun Ammo',
+			weight = 48,
+		},
+
+		-- ['AMMO_ARROW'] = {
+		-- 	label = 'Arrow',
+		-- 	weight = 1,
+		-- },
+
+		-- ['flamethrower_fuel'] = {
+		-- 	label = 'flamethrower fuel',
+		-- 	weight = 25,
+		-- },
 	}
 }
