@@ -366,5 +366,94 @@ end
 -- end)
 
 -----------------------------------------------------------------------------------------------
+Item('box_ammo_5.56', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-5.56', 30)
+    end
+end)
+
+Item('box_ammo_9', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-9', 60)
+    end
+end)
+
+Item('box_ammo_45', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-45', 60)
+    end
+end)
+
+Item('box_ammo_22', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-22', 100)
+    end
+end)
+
+Item('box_ammo_38', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-38', 60)
+    end
+end)
+
+Item('box_ammo_44', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-44', 60)
+    end
+end)
+
+Item('box_ammo_50', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-50', 30)
+    end
+end)
+
+Item('box_ammo_firework', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-firework', 15)
+    end
+end)
+
+Item('box_ammo_flare', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-flare', 10)
+    end
+end)
+
+Item('box_ammo_50bmg', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-50bmg', 30)
+    end
+end)
+
+Item('box_ammo_musket', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-musket', 60)
+    end
+end)
+
+Item('box_ammo_x39', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-x39', 120)
+    end
+end)
+
+Item('box_ammo_12g', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-12g', 24)
+    end
+end)
+
+Item('box_ammo_x51', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-x51', 120)
+    end
+end)
+
+Item('box_ammo_minigun', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-minigun', 100)
+    end
+end)
 
 return Items

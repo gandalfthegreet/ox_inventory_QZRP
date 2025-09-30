@@ -9,6 +9,19 @@ export default defineConfig({
   build: {
     outDir: 'build',
     target: 'esnext',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: [
+            'react',
+            'react-dom',
+            'react-redux',
+            'redux',
+            '@reduxjs/toolkit'
+          ]
+        }
+      }
+    }
   },
   define: {
     'process.env': {},

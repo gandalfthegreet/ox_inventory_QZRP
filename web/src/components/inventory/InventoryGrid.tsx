@@ -1,11 +1,12 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, Suspense } from 'react';
 import { Inventory } from '../../typings';
 import WeightBar from '../utils/WeightBar';
 import InventorySlot from './InventorySlot';
 import { getTotalWeight } from '../../helpers';
 import { useAppSelector } from '../../store';
 import { useIntersection } from '../../hooks/useIntersection';
-
+import SmokeEffect from '../SmokeEffect';
+const RainEffect = React.lazy(() => import('../RainEffect'));
 const PAGE_SIZE = 30;
 
 const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
@@ -14,9 +15,20 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
     [inventory.maxWeight, inventory.items]
   );
   const [page, setPage] = useState(0);
+  const [animationTime, setAnimationTime] = useState(Date.now());
   const containerRef = useRef(null);
   const { ref, entry } = useIntersection({ threshold: 0.5 });
   const isBusy = useAppSelector((state) => state.inventory.isBusy);
+
+  useEffect(() => {
+    let frame: number;
+    const animate = () => {
+      setAnimationTime(Date.now());
+      frame = requestAnimationFrame(animate);
+    };
+    frame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   useEffect(() => {
     if (entry && entry.isIntersecting) {
@@ -25,7 +37,7 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
   }, [entry]);
   return (
     <>
-      <div className="inventory-grid-wrapper" style={{ pointerEvents: isBusy ? 'none' : 'auto' }}>
+      <div className="inventory-grid-wrapper" style={{ pointerEvents: isBusy ? 'none' : 'auto', position: 'relative' }}>
         <div>
           <div className="inventory-grid-header-wrapper">
             <p>{inventory.label}</p>
@@ -37,8 +49,25 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
           </div>
           <WeightBar percent={inventory.maxWeight ? (weight / inventory.maxWeight) * 100 : 0} />
         </div>
-        <div className="inventory-grid-container" ref={containerRef}>
+        <div className="inventory-grid-container" ref={containerRef} style={{ position: "relative", overflow: "hidden", borderRadius: "16px" }}>
           <>
+            <div style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: "40%",
+              width: "100%",
+              height: "60%",
+              pointerEvents: "none",
+              zIndex: 0,
+              overflow: "hidden",
+              borderRadius: "16px"
+            }}>
+              <SmokeEffect />
+              <Suspense fallback={null}>
+                <RainEffect />
+              </Suspense>
+            </div>
             {inventory.items.slice(0, (page + 1) * PAGE_SIZE).map((item, index) => (
               <InventorySlot
                 key={`${inventory.type}-${inventory.id}-${item.slot}`}
