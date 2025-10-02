@@ -363,19 +363,10 @@ return {
         label = 'Nails',
         weight = 1,
     },
----- TOOLS
-    ['siphon'] = {
-        label = 'Siphon',
-        weight = 230,
-        stack = false,
+    ['leather'] = {
+        label = 'Leather',
+        weight = 1,
     },
-    ['anglegrinder'] = {
-        label = 'Angle Grinder',
-        weight = 620,
-        stack = false,
-    },
-
----- OTHERS
     ['cable'] = {
         label = 'Cable',
         weight = 2,
@@ -389,10 +380,27 @@ return {
         label = 'Electronic Kit',
         weight = 500,
     },
+    ['zip_ties'] = {
+        label = 'Zip Ties',
+        weight = 100,
+    },
     -- ['gunoil'] = {
     --     label = 'gun oil',
     --     weight = 1,
     -- },
+
+---- TOOLS
+    ['siphon'] = {
+        label = 'Siphon',
+        weight = 230,
+        stack = false,
+    },
+    ['anglegrinder'] = {
+        label = 'Angle Grinder',
+        weight = 620,
+        stack = false,
+    },
+
 ----------------------------------------------------------------------------------------------
                     ------------- HRS BUILDING ------------------
 ----------------------------------------------------------------------------------------------

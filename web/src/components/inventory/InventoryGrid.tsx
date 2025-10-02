@@ -6,7 +6,6 @@ import { getTotalWeight } from '../../helpers';
 import { useAppSelector } from '../../store';
 import { useIntersection } from '../../hooks/useIntersection';
 import SmokeEffect from '../SmokeEffect';
-const RainEffect = React.lazy(() => import('../RainEffect'));
 const PAGE_SIZE = 30;
 
 const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
@@ -61,12 +60,11 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
               pointerEvents: "none",
               zIndex: 0,
               overflow: "hidden",
-              borderRadius: "16px"
+              borderRadius: "16px",
+              // transform: "translateY(-32px)"
             }}>
               <SmokeEffect />
-              <Suspense fallback={null}>
-                <RainEffect />
-              </Suspense>
+              
             </div>
             {inventory.items.slice(0, (page + 1) * PAGE_SIZE).map((item, index) => (
               <InventorySlot

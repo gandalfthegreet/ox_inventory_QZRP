@@ -1,3 +1,8 @@
+declare global {
+  interface Window {
+    invokeNative?: (event: string, ...args: any[]) => void;
+  }
+}
 import React, { useState } from 'react';
 import { useDrop } from 'react-dnd';
 import { useAppDispatch, useAppSelector } from '../../store';
@@ -40,6 +45,44 @@ const InventoryControl: React.FC = () => {
       <UsefulControls infoVisible={infoVisible} setInfoVisible={setInfoVisible} />
       <div className="inventory-control">
         <div className="inventory-control-wrapper">
+          <div className="inventory-control-logo" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", width: "100%", marginBottom: "8px" }}>
+            <div
+              style={{ display: "inline-block", marginBottom: "16px" }}
+            >
+              <img
+                src="https://i.postimg.cc/fRtyWw6f/512.png"
+                alt="Logo"
+                style={{ width: 72, height: 72, objectFit: "contain", marginBottom: "0" }}
+              />
+            </div>
+            <div
+              style={{
+                background: "#f8111177",
+                borderRadius: "12px",
+                padding: "8px 20px",
+                color: "#fff",
+                fontWeight: 600,
+                fontSize: "13px",
+                textAlign: "center",
+                marginTop: "0",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                letterSpacing: "0.5px",
+                cursor: "pointer",
+                userSelect: "none"
+              }}
+              tabIndex={0}
+              aria-label="Open support ticket"
+              onClick={() => {
+                if (window.invokeNative) {
+                  window.invokeNative('openUrl', 'https://discord.com/channels/1372644951443247344/1373486457800622190');
+                } else {
+                  window.open('https://discord.com/channels/1372644951443247344/1373486457800622190', '_blank');
+                }
+              }}
+            >
+              support ticket
+            </div>
+          </div>
           <input
             className="inventory-control-input"
             type="number"
@@ -57,6 +100,7 @@ const InventoryControl: React.FC = () => {
             {Locale.ui_close || 'Close'}
           </button>
         </div>
+        
       </div>
 
       <button className="useful-controls-button" onClick={() => setInfoVisible(true)}>

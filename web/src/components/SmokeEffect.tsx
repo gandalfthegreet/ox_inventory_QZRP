@@ -8,7 +8,7 @@ function rand(seed: number) {
   return Math.sin(seed) * 10000 - Math.floor(Math.sin(seed) * 10000);
 }
 
-const SMOKE_PARTICLES = 12;
+const SMOKE_PARTICLES = 28;
 
 interface Particle {
   x: number;
@@ -23,7 +23,7 @@ interface Particle {
 const SmokeEffect: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particles = useRef<Particle[]>([]);
-  const hazeAlpha = useRef(0.18 + Math.random() * 0.18);
+  const hazeAlpha = useRef(0.09 + Math.random() * 0.09);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -50,11 +50,11 @@ const SmokeEffect: React.FC = () => {
         particles.current.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          r: lerp(12, 22, Math.random()) * (width / 100),
-          alpha: lerp(0.28, 0.48, Math.random()),
-          dx: lerp(-0.15, 0.15, Math.random()),
-          dy: lerp(-0.08, 0.08, Math.random()),
-          drift: Math.random() * 1000,
+          r: lerp(10, 28, Math.random()) * (width / 100),
+          alpha: lerp(0.45, 0.85, Math.random()),
+          dx: lerp(-0.22, 0.22, Math.random()),
+          dy: lerp(-0.14, 0.14, Math.random()),
+          drift: Math.random() * 4000,
         });
       }
     }
@@ -80,17 +80,17 @@ const SmokeEffect: React.FC = () => {
         if (p.y < -p.r) p.y = height + p.r;
         if (p.y > height + p.r) p.y = -p.r;
 
-        // Draw soft red cloud-like smoke
+        // Draw more vivid, less transparent red smoke
         if (!ctx) continue;
-        const grad = ctx.createRadialGradient(p.x, p.y, p.r * 0.18, p.x, p.y, p.r);
-        grad.addColorStop(0, `rgba(200,30,40,${p.alpha * hazeAlpha.current * 2.8})`);
-        grad.addColorStop(0.4, `rgba(160,10,30,${p.alpha * hazeAlpha.current * 2.2})`);
-        grad.addColorStop(1, `rgba(80,0,10,0)`);
+        const grad = ctx.createRadialGradient(p.x, p.y, p.r * 0.12, p.x, p.y, p.r);
+        grad.addColorStop(0, `rgba(120,0,10,${Math.min(1, p.alpha * hazeAlpha.current * 4.2)})`);
+        grad.addColorStop(0.4, `rgba(80,0,10,${Math.min(1, p.alpha * hazeAlpha.current * 3.2)})`);
+        grad.addColorStop(1, `rgba(40,0,10,0)`);
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI);
         ctx.fillStyle = grad;
-        ctx.globalAlpha = 1.4 * p.alpha * hazeAlpha.current;
+        ctx.globalAlpha = Math.min(1, 3.2 * p.alpha * hazeAlpha.current);
         ctx.fill();
         ctx.globalAlpha = 1;
       }
