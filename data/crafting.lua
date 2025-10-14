@@ -81,235 +81,206 @@ return {
 		blip = { id = 566, colour = 31, scale = 0.8 },
 	}, -- INDEX = 1  basic wood crafting bench
 },
-items = {  
-    -- FOOD PROCESSOR
-    {name = 'burger', ingredients = {raw_meat = 1, bread = 1, cheese = 1}, duration = 5000, count = 1,},
-    {name = 'hotdog', ingredients = {raw_meat = 1, bread = 1}, duration = 5000, count = 1,},
-    {name = 'taco', ingredients = {raw_meat = 1, bread = 1, cheese = 1}, duration = 5000, count = 1,},
-    {name = 'strawberry', ingredients = {strawberry_seed = 1}, duration = 5000, count = 1,},
-    {name = 'dragonfruit', ingredients = {dragonfruit_seed = 1}, duration = 5000, count = 1,},
-    {name = 'mushroom', ingredients = {mushroom_spore = 1}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 2  food processor
-
-items = {  
-    -- MEDICAL BENCH
-    {name = 'bandage', ingredients = {cloth = 10}, duration = 5000, count = 1,},
-    {name = 'painkillers', ingredients = {chemical = 5, bottle = 1}, duration = 5000, count = 1,},
-    {name = 'cleaningkit', ingredients = {plastic = 5, cloth = 5}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 3  medical bench
-
-items = {  
-    -- CEMENT MIXER
-    {name = 'concrete', ingredients = {cement = 2, sand = 2, water = 1}, duration = 5000, count = 1,},
-    {name = 'cement', ingredients = {stone = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 4  cement mixer
-
-items = {  
-    -- WEAPON WORKBENCH
-    {name = 'pickaxe', ingredients = {wood = 10, iron = 5}, duration = 5000, count = 1,},
-    {name = 'screwdriverset', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
-    {name = 'toolbox', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'spark_plug', ingredients = {iron = 2, copper = 1}, duration = 5000, count = 1,},
-    {name = 'fixkit', ingredients = {iron = 10, rubber = 5, plastic = 5}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 5  weapon workbench
-
-items = {  
-    -- JEWELRY WORKBENCH
-    {name = 'goldchain', ingredients = {goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'silverchain', ingredients = {silveringot = 1}, duration = 5000, count = 1,},
-    {name = 'diamond_ring', ingredients = {diamond = 1, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'ruby_ring', ingredients = {ruby = 1, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'sapphire_ring', ingredients = {sapphire = 1, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'emerald_ring', ingredients = {emerald = 1, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'silver_ring', ingredients = {silveringot = 1}, duration = 5000, count = 1,},
-    {name = 'diamond_necklace', ingredients = {diamond = 2, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'ruby_necklace', ingredients = {ruby = 2, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'sapphire_necklace', ingredients = {sapphire = 2, goldbar = 1}, duration = 5000, count = 1,},
-    {name = 'emerald_necklace', ingredients = {emerald = 2, goldbar = 1}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 6  jewelry workbench
-
-items = {  
-    -- BATTERY WORKBENCH
-    {name = 'battery_cells', ingredients = {iron = 2, elec_scrap = 2}, duration = 5000, count = 1,},
-    {name = 'empty_cells', ingredients = {plastic = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 7  battery workbench
-
-items = {  
-    -- TIRE WORKBENCH
-    {name = 'car_tire', ingredients = {rubber = 10, iron = 5}, duration = 5000, count = 1,},
-    {name = 'bike_tire', ingredients = {rubber = 5, iron = 2}, duration = 5000, count = 1,},
-    {name = 'bicycle_tire', ingredients = {rubber = 2, iron = 1}, duration = 5000, count = 1,},
-    {name = 'truck_tire', ingredients = {rubber = 20, iron = 10}, duration = 5000, count = 1,},
-    {name = 'bprooftires', ingredients = {rubber = 20, iron = 10}, duration = 5000, count = 1,},
-    {name = 'drifttires', ingredients = {rubber = 15, iron = 5}, duration = 5000, count = 1,},
-    {name = 'sparetire', ingredients = {rubber = 10, iron = 5}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 8  tire workbench
-
-items = {  
-    -- ENGINE REPAIR BENCH
-    {name = 'engine1', ingredients = {iron = 30, aluminium = 10, copper = 5}, duration = 5000, count = 1,},
-    {name = 'engine2', ingredients = {iron = 35, aluminium = 15, copper = 10}, duration = 5000, count = 1,},
-    {name = 'engine3', ingredients = {iron = 40, aluminium = 20, copper = 15}, duration = 5000, count = 1,},
-    {name = 'engine4', ingredients = {iron = 45, aluminium = 25, copper = 20}, duration = 5000, count = 1,},
-    {name = 'engine5', ingredients = {iron = 50, aluminium = 30, copper = 25}, duration = 5000, count = 1,},
-    {name = 'oilp1', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
-    {name = 'oilp2', ingredients = {iron = 10, aluminium = 4}, duration = 5000, count = 1,},
-    {name = 'oilp3', ingredients = {iron = 15, aluminium = 6}, duration = 5000, count = 1,},
-    {name = 'cylind1', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
-    {name = 'cylind2', ingredients = {iron = 10, aluminium = 4}, duration = 5000, count = 1,},
-    {name = 'cylind3', ingredients = {iron = 15, aluminium = 6}, duration = 5000, count = 1,},
-    {name = 'sparkplugs', ingredients = {iron = 2, copper = 1}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 9  engine repair bench
-
-items = {  
-    -- TRANSMISSION BENCH
-    {name = 'transmission1', ingredients = {iron = 10, aluminium = 5}, duration = 5000, count = 1,},
-    {name = 'transmission2', ingredients = {iron = 15, aluminium = 10}, duration = 5000, count = 1,},
-    {name = 'transmission3', ingredients = {iron = 20, aluminium = 15}, duration = 5000, count = 1,},
-    {name = 'transmission4', ingredients = {iron = 25, aluminium = 20}, duration = 5000, count = 1,},
-    {name = 'manual', ingredients = {paper = 5, plastic = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 10  transmission bench
-
-items = {  
-    -- BRAKES & SUSPENSION BENCH
-    {name = 'brakes1', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
-    {name = 'brakes2', ingredients = {iron = 10, rubber = 4}, duration = 5000, count = 1,},
-    {name = 'brakes3', ingredients = {iron = 15, rubber = 6}, duration = 5000, count = 1,},
-    {name = 'suspension1', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
-    {name = 'suspension2', ingredients = {iron = 10, rubber = 4}, duration = 5000, count = 1,},
-    {name = 'suspension3', ingredients = {iron = 15, rubber = 6}, duration = 5000, count = 1,},
-    {name = 'suspension4', ingredients = {iron = 20, rubber = 8}, duration = 5000, count = 1,},
-    {name = 'suspension5', ingredients = {iron = 25, rubber = 10}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 11  brakes & suspension bench
-
-items = {  
-    -- ELECTRICAL & BATTERY BENCH
-    {name = 'carbattery', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
-    {name = '6v_battery', ingredients = {iron = 2, plastic = 1}, duration = 5000, count = 1,},
-    {name = '12v_battery', ingredients = {iron = 3, plastic = 2}, duration = 5000, count = 1,},
-    {name = '24v_battery', ingredients = {iron = 4, plastic = 3}, duration = 5000, count = 1,},
-    {name = 'cables', ingredients = {copper = 2, plastic = 1}, duration = 5000, count = 1,},
-    {name = 'cables1', ingredients = {copper = 5, plastic = 2}, duration = 5000, count = 1,},
-    {name = 'cables2', ingredients = {copper = 10, plastic = 4}, duration = 5000, count = 1,},
-    {name = 'cables3', ingredients = {copper = 15, plastic = 6}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 12  electrical & battery bench
-
-items = {  
-    -- PERFORMANCE & COSMETICS BENCH
-    {name = 'turbo', ingredients = {iron = 20, aluminium = 10, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'car_armor', ingredients = {steel = 20, rubber = 10}, duration = 5000, count = 1,},
-    {name = 'nos', ingredients = {iron = 5, aluminium = 5, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'underglow', ingredients = {plastic = 5, elec_scrap = 5}, duration = 5000, count = 1,},
-    {name = 'stancerkit', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
-    {name = 'newplate', ingredients = {aluminium = 2, plastic = 1}, duration = 5000, count = 1,},
-    {name = 'harness', ingredients = {cloth = 10, iron = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 13  performance & cosmetics bench
-
-items = {  
-    -- GENERAL MECHANIC BENCH
-    {name = 'mechanic_tools', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'toolbox', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'ducttape', ingredients = {plastic = 5, rubber = 2}, duration = 5000, count = 1,},
-    {name = 'fixkit', ingredients = {iron = 10, rubber = 5, plastic = 5}, duration = 5000, count = 1,},
-    {name = 'vehicleparts', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
-    {name = 'forks', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
-    {name = 'swingarm', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
-    {name = 'axleparts', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
-    {name = 'fueltank', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
-    {name = 'vehicle_50cal', ingredients = {iron = 20, steel = 10}, duration = 5000, count = 1,},
-    {name = 'flamethrower', ingredients = {iron = 20, steel = 10}, duration = 5000, count = 1,},
-    {name = 'bike_chain', ingredients = {iron = 2, steel = 1}, duration = 5000, count = 1,},
-    {name = 'bike_belt', ingredients = {rubber = 2, steel = 1}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 14  general mechanic bench
-
-items = {  
-    -- MINING WORKBENCH
-    {name = 'miningdrill', ingredients = {iron = 10, elec_scrap = 5}, duration = 5000, count = 1,},
-    {name = 'mininglaser', ingredients = {iron = 10, elec_scrap = 10}, duration = 5000, count = 1,},
-    {name = 'drillbit', ingredients = {iron = 2}, duration = 5000, count = 1,},
-    {name = 'goldpan', ingredients = {iron = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 15  mining workbench
-
-items = {  
-    -- FARMING WORKBENCH
-    {name = 'fertilizer', ingredients = {sand = 2, chemical = 1}, duration = 5000, count = 1,},
-    {name = 'rope', ingredients = {cloth = 10}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 16  farming workbench
-
-items = {  
-    -- ELECTRICAL BENCH
-    {name = 'radio', ingredients = {plastic = 20, copper = 10, elec_scrap = 10}, duration = 5000, count = 1,},
-    {name = 'electronickit', ingredients = {elec_scrap = 25, plastic = 5}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 17  electrical bench
-
-items = {  
-    -- GENERAL WORKBENCH
-    {name = 'binoculars', ingredients = {glass = 10, plastic = 5, iron = 5}, duration = 5000, count = 1,},
-    {name = 'empty_bottle', ingredients = {glass = 5}, duration = 5000, count = 1,},
-    {name = 'can', ingredients = {aluminium = 5}, duration = 5000, count = 1,},
-    {name = 'skateboard', ingredients = {wood = 10, iron = 2, rubber = 2}, duration = 5000, count = 1,},
-    {name = 'shovel', ingredients = {wood = 5, iron = 2}, duration = 5000, count = 1,},
-    {name = 'fuse', ingredients = {copper = 1, plastic = 1}, duration = 5000, count = 1,},
-    {name = 'motor', ingredients = {iron = 10, copper = 5}, duration = 5000, count = 1,},
-    {name = 'pipes', ingredients = {iron = 5}, duration = 5000, count = 1,},
-    {name = 'pump', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
-    {name = 'bikerack', ingredients = {iron = 10, rubber = 5}, duration = 5000, count = 1,},
-    {name = 'roofbox_color', ingredients = {plastic = 10, iron = 5}, duration = 5000, count = 1,},
-    {name = 'roofbox_carbon', ingredients = {plastic = 15, iron = 5}, duration = 5000, count = 1,},
-    {name = 'kq_tow_rope', ingredients = {cloth = 20, iron = 2}, duration = 5000, count = 1,},
-    {name = 'kq_winch', ingredients = {iron = 10, rubber = 2}, duration = 5000, count = 1,},
-points = {},
-zones = {},
-blip = { id = 566, colour = 31, scale = 0.8 },
-}, -- INDEX = 18  general workbench
-
+-- {
+-- items = {  
+--     -- FOOD PROCESSOR
+--     {name = 'burger', ingredients = {raw_meat = 1, bread = 1, cheese = 1}, duration = 5000, count = 1,},
+--     {name = 'hotdog', ingredients = {raw_meat = 1, bread = 1}, duration = 5000, count = 1,},
+--     {name = 'taco', ingredients = {raw_meat = 1, bread = 1, cheese = 1}, duration = 5000, count = 1,},
+--     {name = 'strawberry', ingredients = {strawberry_seed = 1}, duration = 5000, count = 1,},
+--     {name = 'dragonfruit', ingredients = {dragonfruit_seed = 1}, duration = 5000, count = 1,},
+--     {name = 'mushroom', ingredients = {mushroom_spore = 1}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 2  food processor
+-- },
+-- {
+-- items = {  
+--     -- MEDICAL BENCH
+--     {name = 'bandage', ingredients = {cloth = 10}, duration = 5000, count = 1,},
+--     {name = 'painkillers', ingredients = {chemical = 5, bottle = 1}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 3  medical bench
+-- },
+-- {
+-- items = {  
+--     -- CEMENT MIXER
+--     {name = 'concrete', ingredients = {cement = 2, sand = 2, water = 1}, duration = 5000, count = 1,},
+--     {name = 'cement', ingredients = {stone = 2}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 4  cement mixer
+-- },
+-- {
+-- items = {  
+--     -- WEAPON WORKBENCH
+--     {name = 'pickaxe', ingredients = {wood = 10, iron = 5}, duration = 5000, count = 1,},
+--     {name = 'screwdriverset', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
+--     {name = 'toolbox', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'miningdrill', ingredients = {iron = 10, elec_scrap = 5}, duration = 5000, count = 1,},
+--     {name = 'mininglaser', ingredients = {iron = 10, elec_scrap = 10}, duration = 5000, count = 1,},
+--     {name = 'drillbit', ingredients = {iron = 2}, duration = 5000, count = 1,},
+--     {name = 'goldpan', ingredients = {iron = 2}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 5  weapon workbench
+-- },
+-- {
+-- items = {  
+--     -- TIRE WORKBENCH
+--     {name = 'car_tire', ingredients = {rubber = 10, iron = 5}, duration = 5000, count = 1,},
+--     {name = 'bike_tire', ingredients = {rubber = 5, iron = 2}, duration = 5000, count = 1,},
+--     {name = 'bicycle_tire', ingredients = {rubber = 2, iron = 1}, duration = 5000, count = 1,},
+--     {name = 'truck_tire', ingredients = {rubber = 20, iron = 10}, duration = 5000, count = 1,},
+--     {name = 'bprooftires', ingredients = {rubber = 20, iron = 10}, duration = 5000, count = 1,},
+--     {name = 'drifttires', ingredients = {rubber = 15, iron = 5}, duration = 5000, count = 1,},
+--     {name = 'sparetire', ingredients = {rubber = 10, iron = 5}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 8  tire workbench
+-- },
+-- {
+-- items = {  
+--     -- ENGINE REPAIR BENCH
+--     {name = 'engine1', ingredients = {iron = 30, aluminium = 10, copper = 5}, duration = 5000, count = 1,},
+--     {name = 'engine2', ingredients = {iron = 35, aluminium = 15, copper = 10}, duration = 5000, count = 1,},
+--     {name = 'engine3', ingredients = {iron = 40, aluminium = 20, copper = 15}, duration = 5000, count = 1,},
+--     {name = 'engine4', ingredients = {iron = 45, aluminium = 25, copper = 20}, duration = 5000, count = 1,},
+--     {name = 'engine5', ingredients = {iron = 50, aluminium = 30, copper = 25}, duration = 5000, count = 1,},
+--     {name = 'oilp1', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
+--     {name = 'oilp2', ingredients = {iron = 10, aluminium = 4}, duration = 5000, count = 1,},
+--     {name = 'oilp3', ingredients = {iron = 15, aluminium = 6}, duration = 5000, count = 1,},
+--     {name = 'cylind1', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
+--     {name = 'cylind2', ingredients = {iron = 10, aluminium = 4}, duration = 5000, count = 1,},
+--     {name = 'cylind3', ingredients = {iron = 15, aluminium = 6}, duration = 5000, count = 1,},
+--     {name = 'sparkplugs', ingredients = {iron = 2, copper = 1}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 9  engine repair bench
+-- },
+-- {
+-- items = {  
+--     -- TRANSMISSION BENCH
+--     {name = 'transmission1', ingredients = {iron = 10, aluminium = 5}, duration = 5000, count = 1,},
+--     {name = 'transmission2', ingredients = {iron = 15, aluminium = 10}, duration = 5000, count = 1,},
+--     {name = 'transmission3', ingredients = {iron = 20, aluminium = 15}, duration = 5000, count = 1,},
+--     {name = 'transmission4', ingredients = {iron = 25, aluminium = 20}, duration = 5000, count = 1,},
+--     {name = 'manual', ingredients = {paper = 5, plastic = 2}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 10  transmission bench
+-- },
+-- {
+-- items = {  
+--     -- BRAKES & SUSPENSION BENCH
+--     {name = 'brakes1', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
+--     {name = 'brakes2', ingredients = {iron = 10, rubber = 4}, duration = 5000, count = 1,},
+--     {name = 'brakes3', ingredients = {iron = 15, rubber = 6}, duration = 5000, count = 1,},
+--     {name = 'suspension1', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
+--     {name = 'suspension2', ingredients = {iron = 10, rubber = 4}, duration = 5000, count = 1,},
+--     {name = 'suspension3', ingredients = {iron = 15, rubber = 6}, duration = 5000, count = 1,},
+--     {name = 'suspension4', ingredients = {iron = 20, rubber = 8}, duration = 5000, count = 1,},
+--     {name = 'suspension5', ingredients = {iron = 25, rubber = 10}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 11  brakes & suspension bench
+-- },
+-- {
+-- items = {  
+--     -- ELECTRICAL & BATTERY BENCH
+--     {name = 'carbattery', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
+--     {name = '6v_battery', ingredients = {iron = 2, plastic = 1}, duration = 5000, count = 1,},
+--     {name = '12v_battery', ingredients = {iron = 3, plastic = 2}, duration = 5000, count = 1,},
+--     {name = '24v_battery', ingredients = {iron = 4, plastic = 3}, duration = 5000, count = 1,},
+--     {name = 'cables', ingredients = {copper = 2, plastic = 1}, duration = 5000, count = 1,},
+--     {name = 'cables1', ingredients = {copper = 5, plastic = 2}, duration = 5000, count = 1,},
+--     {name = 'cables2', ingredients = {copper = 10, plastic = 4}, duration = 5000, count = 1,},
+--     {name = 'cables3', ingredients = {copper = 15, plastic = 6}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 12  electrical & battery bench
+-- },
+-- {
+-- items = {  
+--     -- PERFORMANCE & COSMETICS BENCH
+--     {name = 'turbo', ingredients = {iron = 20, aluminium = 10, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'car_armor', ingredients = {steel = 20, rubber = 10}, duration = 5000, count = 1,},
+--     {name = 'nos', ingredients = {iron = 5, aluminium = 5, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'underglow', ingredients = {plastic = 5, elec_scrap = 5}, duration = 5000, count = 1,},
+--     {name = 'stancerkit', ingredients = {iron = 5, plastic = 2}, duration = 5000, count = 1,},
+--     {name = 'newplate', ingredients = {aluminium = 2, plastic = 1}, duration = 5000, count = 1,},
+--     {name = 'harness', ingredients = {cloth = 10, iron = 2}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 13  performance & cosmetics bench
+-- },
+-- {
+-- items = {  
+--     -- GENERAL MECHANIC BENCH
+--     {name = 'mechanic_tools', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'toolbox', ingredients = {iron = 10, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'ducttape', ingredients = {plastic = 5, rubber = 2}, duration = 5000, count = 1,},
+--     {name = 'fixkit', ingredients = {iron = 10, rubber = 5, plastic = 5}, duration = 5000, count = 1,},
+--     {name = 'vehicleparts', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
+--     {name = 'forks', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
+--     {name = 'swingarm', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
+--     {name = 'axleparts', ingredients = {iron = 5, steel = 2}, duration = 5000, count = 1,},
+--     {name = 'fueltank', ingredients = {iron = 5, aluminium = 2}, duration = 5000, count = 1,},
+--     {name = 'bike_chain', ingredients = {iron = 2, steel = 1}, duration = 5000, count = 1,},
+--     {name = 'bike_belt', ingredients = {rubber = 2, steel = 1}, duration = 5000, count = 1,},
+--     {name = 'spark_plug', ingredients = {iron = 2, copper = 1}, duration = 5000, count = 1,},
+--     points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 14  general mechanic bench
+-- },
+-- {
+-- items = {  
+--     -- FARMING WORKBENCH
+--     {name = 'fertilizer', ingredients = {sand = 2, chemical = 1}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 16  farming workbench
+-- },
+-- -- {
+-- -- items = {  
+-- --     -- ELECTRICAL BENCH
+-- --     {name = 'radio', ingredients = {plastic = 20, copper = 10, elec_scrap = 10}, duration = 5000, count = 1,},
+-- --     {name = 'electronickit', ingredients = {elec_scrap = 25, plastic = 5}, duration = 5000, count = 1,},
+-- --     {name = 'battery_cells', ingredients = {iron = 2, elec_scrap = 2}, duration = 5000, count = 1,},
+-- --     {name = 'empty_cells', ingredients = {plastic = 2}, duration = 5000, count = 1,},
+-- --     points = {},
+-- -- zones = {},
+-- -- blip = { id = 566, colour = 31, scale = 0.8 },
+-- -- }, -- INDEX = 17  electrical bench
+-- -- },
+-- {
+-- items = {  
+--     -- GENERAL WORKBENCH
+--     {name = 'binoculars', ingredients = {glass = 10, plastic = 5, iron = 5}, duration = 5000, count = 1,},
+--     {name = 'shovel', ingredients = {wood = 5, iron = 2}, duration = 5000, count = 1,},
+--     {name = 'fuse', ingredients = {copper = 1, plastic = 1}, duration = 5000, count = 1,},
+--     {name = 'motor', ingredients = {iron = 10, copper = 5}, duration = 5000, count = 1,},
+--     {name = 'pipes', ingredients = {iron = 5}, duration = 5000, count = 1,},
+--     {name = 'pump', ingredients = {iron = 5, rubber = 2}, duration = 5000, count = 1,},
+--     {name = 'kq_tow_rope', ingredients = {cloth = 20, iron = 2}, duration = 5000, count = 1,},
+--     {name = 'kq_winch', ingredients = {iron = 10, rubber = 2}, duration = 5000, count = 1,},
+-- points = {},
+-- zones = {},
+-- blip = { id = 566, colour = 31, scale = 0.8 },
+-- }, -- INDEX = 18  general workbench
+-- }
 
 }

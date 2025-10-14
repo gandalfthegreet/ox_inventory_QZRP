@@ -151,9 +151,9 @@ function client.openInventory(inv, data)
 		-- end
 	end
 
-	if inv == 'dumpster' and cache.vehicle then
-		return lib.notify({ id = 'inventory_right_access', type = 'error', description = locale('inventory_right_access') })
-	end
+	-- if inv == 'dumpster' and cache.vehicle then
+	-- 	return lib.notify({ id = 'inventory_right_access', type = 'error', description = locale('inventory_right_access') })
+	-- end
 
 	if not canOpenInventory() then
         return lib.notify({ id = 'inventory_player_access', type = 'error', description = locale('inventory_player_access') })
@@ -819,9 +819,9 @@ local function registerCommands()
 			if not shared.target and entityType == 3 then
 				local model = GetEntityModel(entity)
 
-				if Inventory.Dumpsters:includes(model) then
-					return Inventory.OpenDumpster(entity)
-				end
+				-- if Inventory.Dumpsters:includes(model) then
+				-- 	return Inventory.OpenDumpster(entity)
+				-- end
 			end
 
 			if entityType ~= 2 then return end

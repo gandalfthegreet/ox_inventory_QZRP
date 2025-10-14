@@ -366,93 +366,153 @@ end
 -- end)
 
 -----------------------------------------------------------------------------------------------
-Item('box_ammo_5.56', function(event, item, inventory, data, slot)
-    if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-5.56', 30)
-    end
-end)
-
-Item('box_ammo_9', function(event, item, inventory, data, slot)
-    if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-9', 60)
-    end
-end)
-
-Item('box_ammo_45', function(event, item, inventory, data, slot)
-    if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-45', 60)
-    end
-end)
-
-Item('box_ammo_22', function(event, item, inventory, data, slot)
+Item('box_ammo-22', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
         Inventory.AddItem(inventory, 'ammo-22', 100)
     end
 end)
 
-Item('box_ammo_38', function(event, item, inventory, data, slot)
+Item('box_ammo-38', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
         Inventory.AddItem(inventory, 'ammo-38', 60)
     end
 end)
 
-Item('box_ammo_44', function(event, item, inventory, data, slot)
+Item('box_ammo-44', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
         Inventory.AddItem(inventory, 'ammo-44', 60)
     end
 end)
 
-Item('box_ammo_50', function(event, item, inventory, data, slot)
+Item('box_ammo-45', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-50', 30)
+        Inventory.AddItem(inventory, 'ammo-45', 60)
     end
 end)
 
-Item('box_ammo_firework', function(event, item, inventory, data, slot)
+Item('box_ammo-50', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-firework', 15)
+        Inventory.AddItem(inventory, 'ammo-50', 60)
     end
 end)
 
-Item('box_ammo_flare', function(event, item, inventory, data, slot)
+Item('box_ammo-9', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-flare', 10)
+        Inventory.AddItem(inventory, 'ammo-9', 60)
     end
 end)
 
-Item('box_ammo_50bmg', function(event, item, inventory, data, slot)
+Item('box_ammo-firework', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-50bmg', 30)
+        Inventory.AddItem(inventory, 'ammo-firework', 4)
     end
 end)
 
-Item('box_ammo_musket', function(event, item, inventory, data, slot)
+Item('box_ammo-flare', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-musket', 60)
+        Inventory.AddItem(inventory, 'ammo-flare', 6)
     end
 end)
 
-Item('box_ammo_x39', function(event, item, inventory, data, slot)
+Item('box_ammo-grenade', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-grenade', 6)
+    end
+end)
+
+Item('box_ammo-50bmg', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-50bmg', 25)
+    end
+end)
+
+Item('box_ammo-laser', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-laser', 60)
+    end
+end)
+
+Item('box_ammo-musket', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-musket', 30)
+    end
+end)
+
+Item('box_ammo-railgun', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-railgun', 6)
+    end
+end)
+
+Item('box_ammo-5.56', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-5.56', 120)
+    end
+end)
+
+Item('box_ammo-5.45', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-5.45', 120)
+    end
+end)
+
+Item('box_ammo-x39', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
         Inventory.AddItem(inventory, 'ammo-x39', 120)
     end
 end)
 
-Item('box_ammo_12g', function(event, item, inventory, data, slot)
+Item('box_ammo-9x39', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-12g', 24)
+        Inventory.AddItem(inventory, 'ammo-9x39', 60)
     end
 end)
 
-Item('box_ammo_x51', function(event, item, inventory, data, slot)
+Item('box_ammo-rocket', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-rocket', 4)
+    end
+end)
+
+Item('box_ammo-12g', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-12g', 60)
+    end
+end)
+
+Item('box_ammo-12s', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-12s', 60)
+    end
+end)
+
+Item('box_ammo-x51', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
         Inventory.AddItem(inventory, 'ammo-x51', 120)
     end
 end)
 
-Item('box_ammo_minigun', function(event, item, inventory, data, slot)
+Item('box_ammo-x54', function(event, item, inventory, data, slot)
     if event == 'usedItem' then
-        Inventory.AddItem(inventory, 'ammo-minigun', 100)
+        Inventory.AddItem(inventory, 'ammo-x54', 100)
+    end
+end)
+
+Item('box_ammo-emp', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-emp', 6)
+    end
+end)
+
+Item('box_ammo-arrow', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-arrow', 25)
+    end
+end)
+
+Item('box_ammo-glue', function(event, item, inventory, data, slot)
+    if event == 'usedItem' then
+        Inventory.AddItem(inventory, 'ammo-glue', 200)
     end
 end)
 
