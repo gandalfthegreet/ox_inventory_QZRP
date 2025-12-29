@@ -34,7 +34,7 @@ export const onCraft = (source: DragSource, target: DropTarget) => {
     count,
   };
 
-  store.dispatch(
+  (store.dispatch as any)(
     craftItem({
       ...data,
       fromSlot: sourceSlot.slot,

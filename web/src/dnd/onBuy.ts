@@ -41,7 +41,7 @@ export const onBuy = (source: DragSource, target: DropTarget) => {
     count: count,
   };
 
-  store.dispatch(
+  (store.dispatch as any)(
     buyItem({
       ...data,
       fromSlot: sourceSlot.slot,

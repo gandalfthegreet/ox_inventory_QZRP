@@ -52,7 +52,7 @@ export const onDrop = (source: DragSource, target?: DropTarget) => {
     count: count,
   };
 
-  store.dispatch(
+  (store.dispatch as any)(
     validateMove({
       ...data,
       fromSlot: sourceSlot.slot,

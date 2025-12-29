@@ -7,7 +7,7 @@ import {
   stackSlotsReducer,
   swapSlotsReducer,
 } from '../reducers';
-import { State } from '../typings';
+import { State, Slot } from '../typings';
 
 const initialState: State = {
   leftInventory: {
@@ -44,7 +44,7 @@ export const inventorySlice = createSlice({
 
       for (let i = 0; i < action.payload.length; i++) {
         const entry = action.payload[i];
-        if (!state.additionalMetadata.find((el) => el.value === entry.value)) metadata.push(entry);
+        if (!state.additionalMetadata.find((el: { metadata: string; value: string }) => el.value === entry.value)) metadata.push(entry);
       }
 
       state.additionalMetadata = [...state.additionalMetadata, ...metadata];
@@ -56,7 +56,7 @@ export const inventorySlice = createSlice({
       state.shiftPressed = action.payload;
     },
     setContainerWeight: (state, action: PayloadAction<number>) => {
-      const container = state.leftInventory.items.find((item) => item.metadata?.container === state.rightInventory.id);
+      const container = state.leftInventory.items.find((item: Slot) => item.metadata?.container === state.rightInventory.id);
 
       if (!container) return;
 

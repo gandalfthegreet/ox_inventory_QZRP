@@ -5,7 +5,6 @@ import InventorySlot from './InventorySlot';
 import { getTotalWeight } from '../../helpers';
 import { useAppSelector } from '../../store';
 import { useIntersection } from '../../hooks/useIntersection';
-import SmokeEffect from '../SmokeEffect';
 const PAGE_SIZE = 30;
 
 const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
@@ -50,22 +49,6 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
         </div>
         <div className="inventory-grid-container" ref={containerRef} style={{ position: "relative", overflow: "hidden", borderRadius: "16px" }}>
           <>
-            <div style={{
-              position: "absolute",
-              left: 0,
-              right: 0,
-              bottom: "40%",
-              width: "100%",
-              height: "60%",
-              pointerEvents: "none",
-              zIndex: 0,
-              overflow: "hidden",
-              borderRadius: "16px",
-              // transform: "translateY(-32px)"
-            }}>
-              <SmokeEffect />
-              
-            </div>
             {inventory.items.slice(0, (page + 1) * PAGE_SIZE).map((item, index) => (
               <InventorySlot
                 key={`${inventory.type}-${inventory.id}-${item.slot}`}
