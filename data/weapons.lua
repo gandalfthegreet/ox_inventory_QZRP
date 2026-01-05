@@ -1,9 +1,10 @@
 return {
 	Weapons = {
 
--- Custom Weapons
-['WEAPON_MREVOLVER'] = { label = 'MREVOLVER', weight = 1600, durability = 0.03, ammoname = 'ammo-9' },
-['WEAPON_MREVOLVER2'] = { label = 'MREVOLVER2', weight = 1600, durability = 0.03, ammoname = 'ammo-9' },
+-- Custom Weapons WEAPON_SCORPION
+['WEAPON_SCORPION'] = { label = 'SCORPION', weight = 1600, durability = 0.03, ammoname = 'ammo-44' },
+['WEAPON_MREVOLVER'] = { label = 'MREVOLVER', weight = 1600, durability = 0.03, ammoname = 'ammo-44' },
+['WEAPON_MREVOLVER2'] = { label = 'MREVOLVER2', weight = 1600, durability = 0.03, ammoname = 'ammo-44' },
 ['WEAPON_2S'] = { label = '2S', weight = 1600, durability = 0.03, ammoname = 'ammo-shotgun' },
 ['WEAPON_CHAINSAW'] = { label = 'Chainsaw', weight = 5600, durability = 0.03, ammoname = 'ammo-petrol' },
 ['WEAPON_CONSAW'] = { label = 'Consaw', weight = 1800, durability = 0.03, ammoname = 'ammo-petrol' },
@@ -21,6 +22,8 @@ return {
 ['WEAPON_MDR2'] = { label = 'MDR2', weight = 3300, durability = 0.03, ammoname = 'ammo-5.56' },
 ['WEAPON_MDR'] = { label = 'MDR', weight = 3300, durability = 0.03, ammoname = 'ammo-5.56' },
 ['WEAPON_M870']= { label = 'm870', weight = 1950, durability = 0.03, ammoname = 'ammo-shotgun' },
+
+['WEAPON_EXDUCK'] = { label = 'Rubber ducky', weight = 600, throwable = true, },
 -- Melee Weapons (Custom)
 ['WEAPON_SPATULA'] = { label = 'Spatula', weight = 1000, durability = 0.1 },
 ['WEAPON_CAST_IRON'] = { label = 'Cast Iron', weight = 1000, durability = 0.1 },
@@ -30,7 +33,7 @@ return {
 ['WEAPON_LADLE'] = { label = 'Ladle', weight = 1000, durability = 0.1 },
 ['WEAPON_PEPPERMILL'] = { label = 'Pepper Mill', weight = 1000, durability = 0.1 },
 ['WEAPON_KETTLE'] = { label = 'Kettle', weight = 1000, durability = 0.1 },
-['weapon_scythe'] = { label = 'scythe', weight = 3000, durability = 0.1 },
+['WEAPON_SCYTHE'] = { label = 'scythe', weight = 3000, durability = 0.1 },
 ['WEAPON_M9_BAYONET_CRIMSON_WEB'] = { label = 'M9 Bayonet Crimson Web', weight = 1000, durability = 0.1 },
 ['WEAPON_M9_BAYONET_SAPPHIRE'] = { label = 'M9 Bayonet Sapphire', weight = 1000, durability = 0.1 },
 ['WEAPON_M9_BAYONET_EMERALD'] = { label = 'M9 Bayonet Emerald', weight = 1000, durability = 0.1 },

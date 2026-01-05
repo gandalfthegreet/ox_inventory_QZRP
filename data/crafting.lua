@@ -70,11 +70,9 @@ return {
 			{name = 'backpack_lvl2',ingredients = {cloth = 125, string = 75},duration = 5000,count = 1,},
 			{name = 'backpack_lvl3',ingredients = {cloth = 250, string = 125},duration = 5000,count = 1,},
 		---- EXTRAS ----
-			{name = 'kq_outfitbag',ingredients = {cloth = 200},duration = 5000,count = 1,},
 			{name = 'electronickit',ingredients = {elec_scrap = 25},duration = 5000,count = 1,},
 			{name = 'radio',ingredients = {scrapmetal = 75, elec_scrap = 75, cables = 25, electronickit = 2},duration = 5000,count = 1,},
 			{name = 'prop_tool_bench02_ld',ingredients = {wood = 150, scrapmetal = 100, screw = 25},duration = 5000,count = 1,},
-			{name = 'kq_tow_rope',ingredients = {cloth = 400},duration = 5000,count = 1,},
         --
 		points = {},
 		zones = {},
